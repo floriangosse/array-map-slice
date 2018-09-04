@@ -1,6 +1,6 @@
 {
   "name": "array-map-slice",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Allows to map a slice of the array for each item in the array.",
   "main": "index.js",
   "scripts": {
