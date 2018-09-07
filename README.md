@@ -14,11 +14,11 @@ mapSlice([ 1, 2, 3 ], (slice, index, array) => {
 // => [ '1', '1-2', '1-2-3' ]
 ```
 
-Or if you want to create slices from the right use `mapSliceRight`:
+Or if you want to create slices in reversed order use `reverse`:
 ```js
 const mapSlice = require('array-map-slice');
 
-mapSlice.mapSliceRight([ 1, 2, 3 ], (slice, index, array) => {
+mapSlice.reverse([ 1, 2, 3 ], (slice, index, array) => {
     return slice.join('-');
 });
 // => [ '1-2-3', '2-3', '3' ]
@@ -34,7 +34,7 @@ npm install array-map-slice
 
 ## API
 
-### mapSlice(input, mapper) / mapSliceRight(input, mapper)
+### mapSlice(input, mapper) / mapSlice.reverse(input, mapper)
 
 Returns a new array with values returned by the mapper function.
 
