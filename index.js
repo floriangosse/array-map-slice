@@ -7,7 +7,7 @@ function mapSlice (array, map) {
     });
 }
 
-function mapSliceRight (array, map) {
+function mapSliceReverse (array, map) {
     return array.map((_, index, array) => {
         const slice = array.slice(index, array.length);
 
@@ -16,6 +16,6 @@ function mapSliceRight (array, map) {
 }
 
 mapSlice.mapSlice = mapSlice;
-mapSlice.mapSliceRight = mapSliceRight;
+mapSlice.reverse = mapSliceReverse;
 
 module.exports = mapSlice;

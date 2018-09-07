@@ -1,4 +1,4 @@
-const { mapSlice, mapSliceRight } = require('./');
+const mapSlice = require('./');
 
 const identity = (v) => v;
 
@@ -15,7 +15,7 @@ test('mapSlice', () => {
     expect(actual).toEqual(expected);
 });
 
-test('mapSliceRight', () => {
+test('mapSlice.reverse', () => {
     const array = [ 1, 2, 3 ];
 
     const expected = [
@@ -23,7 +23,7 @@ test('mapSliceRight', () => {
         [ 2, 3 ],
         [ 3 ]
     ];
-    const actual = mapSliceRight(array, identity);
+    const actual = mapSlice.reverse(array, identity);
 
     expect(actual).toEqual(expected);
 });
