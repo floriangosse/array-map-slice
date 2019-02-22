@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/floriangosse/array-map-slice#readme",
   "devDependencies": {
-    "jest": "^23.5.0"
+    "jest": "^24.1.0"
   }
 }
