@@ -1,4 +1,4 @@
-# array-map-slice [![Build Status](https://travis-ci.com/floriangosse/array-map-slice.svg?branch=master)](https://travis-ci.com/floriangosse/array-map-slice) [![Greenkeeper badge](https://badges.greenkeeper.io/floriangosse/array-map-slice.svg)](https://greenkeeper.io/)
+# array-map-slice [![Build Status](https://travis-ci.com/floriangosse/array-map-slice.svg?branch=master)](https://travis-ci.com/floriangosse/array-map-slice)
 
 > Allows to map a slice of the array for each item in the array.
 
