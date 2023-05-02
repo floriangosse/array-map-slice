@@ -1,8 +1,10 @@
+const test = require('ava');
+
 const { mapSlice, mapSliceRight } = require('./');
 
 const identity = (v) => v;
 
-test('mapSlice', () => {
+test('mapSlice', (t) => {
     const array = [ 1, 2, 3 ];
 
     const expected = [
@@ -12,10 +14,10 @@ test('mapSlice', () => {
     ];
     const actual = mapSlice(array, identity);
 
-    expect(actual).toEqual(expected);
+    t.deepEqual(actual, expected);
 });
 
-test('mapSliceRight', () => {
+test('mapSliceRight', (t) => {
     const array = [ 1, 2, 3 ];
 
     const expected = [
@@ -25,5 +27,5 @@ test('mapSliceRight', () => {
     ];
     const actual = mapSliceRight(array, identity);
 
-    expect(actual).toEqual(expected);
+    t.deepEqual(actual, expected);
 });
